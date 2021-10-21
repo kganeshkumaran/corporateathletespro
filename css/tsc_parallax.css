@@ -7,7 +7,7 @@
 	position: relative;
 	margin: 8px auto;
 	overflow: hidden;
-	background: transparent url(../../images/parallax/wallpaper.png) repeat 0% 0%;
+	background: transparent url(https://rawcdn.githack.com/kganeshkumaran/corporateathletespro/main/images/wallpaper.png) repeat 0% 0%;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	-webkit-transition: background-position 1s ease-out 0.3s;
@@ -175,7 +175,7 @@
 	height: 20px;
 	top: 5px;
 	left: 5px;
-	background: transparent url(../../images/parallax/arrows.png) no-repeat top left;
+	background: transparent url(https://rawcdn.githack.com/kganeshkumaran/corporateathletespro/main/images/arrows.png) no-repeat top left;
 	border-radius: 50%;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
