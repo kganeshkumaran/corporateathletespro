@@ -1,0 +1,41 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+$.get("https://ipinfo.io", function (response) {
+    $("#ip").html("IP: " + response.ip);
+    $("#address").html("Location: " + response.city + ", " + response.region);
+    $("#details").html(JSON.stringify(response, null, 4));
+
+    if(response.country==="IN") {
+		 // Huawei Phone must come first because its UA also contains "Android"
+    if (userAgent.includes("HUAWEI")) {
+       window.location.replace("https://appgallery.huawei.com/app/C101184875");
+    } else if (userAgent.includes("Android")) {
+        window.location.replace("https://bit.ly/CAPAPPS");
+    } else if (userAgent.includes("iPhone")) {
+        window.location.replace("https://bit.ly/CAPAPPLE");
+    } else {
+        //cant be sure about device, so redirect to home page
+        window.location.replace("https://bit.ly/CAPMV1");}
+
+}
+		else
+		{window.location.replace("https://www.google.com");}
+}, "jsonp");
+
+</script>
+</head>
+<body>
+<h3>Client side IP geolocation using <a href="http://ipinfo.io">ipinfo.io</a></h3>
+<hr/>
+<div id="ip"></div>
+<div id="address"></div>
+<hr/>Full response: <pre id="details"></pre>
+</body>
+
+</html>
