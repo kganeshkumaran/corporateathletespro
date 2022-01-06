@@ -1,0 +1,19 @@
+<html>
+
+<script>
+var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+
+   // Huawei Phone must come first because its UA also contains "Android"
+    if (userAgent.includes("HUAWEI")) {
+       window.location.replace("https://appgallery.huawei.com/app/C101184875");
+    } else if (userAgent.includes("Android")) {
+        window.location.replace("https://bit.ly/CAPAPPS");
+    } else if (userAgent.includes("iPhone")) {
+        window.location.replace("https://bit.ly/CAPAPPLE");
+    } else {
+        //cant be sure about device, so redirect to home page
+        window.location.replace("https://www.google.com");
+}
+</script>
+</html>
