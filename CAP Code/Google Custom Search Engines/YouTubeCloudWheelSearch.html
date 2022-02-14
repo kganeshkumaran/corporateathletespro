@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<!-- Custom Menu Header Loading -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<!--link rel="stylesheet" href="C:/Users/q789819/Desktop/Ganesh/Ganesh Interests/Corporate Athletes Pro/5.CorporateAthletesPro/Website Design - CorporateAthletesPro/Cloud Wheel - Search/Custom Menu/style.css"-->
+<style>
+body{
+  background:radial-gradient(#6f2d9c, #391353);
+  background-size:4px 4px;
+  perspective: 400px;
+  width: 100%;
+  height: 600px;
+}
+.dropholder{
+  width: 322px;
+  height: 60px;
+  margin:10px auto;
+  padding:0 0 0 20px;
+  border-radius:10px;
+  font:18px arial;
+  color: #fff;
+  position: relative;
+  box-sizing:border-box;
+  border:1px solid #9b0db9;
+  animation: move 3s ease-in-out infinite;
+  position: relative;
+}
+.dropholder:hover, .dropholder:hover:after{
+  animation-play-state:paused;
+}
+.dropholder:after{
+  content:"";
+  position: absolute;
+  width: 250px;
+  height: 5px;
+  background:rgba(0,0,0, 0);
+  display: block;
+  top:100px;
+  left:37px;
+  margin: auto;
+  border-radius:50%;
+  box-shadow:0 15px 10px rgba(0,0,0, 0.4);
+  animation: moveShadow 3s ease-in-out infinite;
+}
+p{
+  float: left;
+  line-height:60px;
+}
+.dropdown > p{
+  font-size:16px;
+}
+.dropdown, .dropholder{
+  background:linear-gradient(#da4df8 ,#9b0db9);
+}
+.dropdown{
+  margin-left:20px;
+  float: left;
+  width: 208px;
+  padding:0 0 0 20px;
+  border-radius:0 10px 10px 0;
+  cursor: pointer;
+  height:58px;
+  border-left:1px solid #da4df8;
+  position: relative;
+}
+.dropdown:hover{
+  background:linear-gradient(#da4df8 ,#b11cd0);
+}
+.dropdown:after{
+  content: "+";
+  font-size: 18px;
+  position: absolute;
+  right: 15px;
+  top:18px;
+  display: block;
+}
+
+.menu{
+  position: absolute;
+  right:0;
+  top:70px;
+  width: 228px;
+  cursor: pointer;
+  opacity:0;
+  transform-style: preserve-3d;
+  transform:rotatey(180deg) rotateX(5deg) translatey(100px);
+  backface-visibility: hidden;
+  background:linear-gradient(#4dc2f8 ,#0d82b9);
+  border:2px solid #0d82b9;
+  border-radius:10px;
+  transition:all 0.8s;
+  z-index:5;
+  overflow:hidden;
+}
+.menu li{
+  padding: 10px 10px;
+  border-bottom:1px dotted #fff;
+  color:#e8f8ff; 
+  transition:all 0.3s;
+}
+.menu li:hover{
+  background:#61ccfd;
+  padding-left:20px;
+}
+.menu li:last-child{
+  border:none;
+}
+
+.showMenu{
+   opacity:1;
+  transform:rotateX(0deg) translatey(0px);
+}
+li > i{
+  float: left;
+  padding-top: 3px;
+  padding-right: 8px;
+}
+p > i{
+ position: relative;
+ top:2px;
+}
+i{
+  opacity: 0.7;
+}
+@keyframes move{
+  0%, 100%{transform:translateY(-10px);}
+  50%{transform:translateY(0);}
+}
+
+@keyframes moveShadow{
+  0%,100%{transform:translateY(10px);opacity:0.4;}
+  50%{transform:translateY(0);opacity:1;}
+}
+
+</style>
+
+<!--link rel="stylesheet" href="C:/Users/q789819/Desktop/Ganesh/Ganesh Interests/Corporate Athletes Pro/5.CorporateAthletesPro/Website Design - CorporateAthletesPro/Cloud Wheel - Search/Custom Menu/style.css"-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!-- <script  src="C:/Users/q789819/Desktop/Ganesh/Ganesh Interests/Corporate Athletes Pro/5.CorporateAthletesPro/Website Design - CorporateAthletesPro/Cloud Wheel - Search/Custom Menu/script.js"></script> -->
+
+
+<!-- Custom Menu JavaScript -->
+
+<script>
+
+/*
+Visit My Website to see creative design
+				www.HUSAMUI.com
+*/
+
+
+$(document).ready(function(){
+
+  $(".dropdown").click(function(){
+   
+
+    $(".menu").toggleClass("showMenu");
+ document.getElementById("Logo").style.display = 'none';
+  document.getElementById("myTable").rows[0].cells[0].style.height="700px";
+
+
+      $(".menu > li").click(function(){
+        $(".dropdown > p").html($(this).html());
+          $(".menu").removeClass("showMenu");
+
+document.getElementById("Logo").style.display = 'inline';
+document.getElementById("myTable").rows[0].cells[0].style.height="0px";
+
+      });
+  });
+  
+});
+
+</script>
+
+<!-- Custom Menu JavaScript -->
+
+<!-- Custom Menu Header Loading -->
+
+    <title>CorporateAthletesPro App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .light {
+            background: #666;
+            color: #fff;
+        }
+
+        .content .tagcloud {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        ul {
+            display: inline-block;
+        }
+
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- custom style -->
+    <style>
+        .tagcloud {
+            font-size: 16px;
+        }
+
+        .tagcloud--item {
+            padding: 2px 4px;
+            background-color: transparent;
+            border: 1px solid transparent;
+	    color: #ffffff;
+            cursor: pointer;
+        }
+
+        .tagcloud--item:hover {
+            background-color: rgba(255, 255, 255,1);
+	    color: #ff0000;
+            border: 2px solid #fffff;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 6px;
+            opacity: 1 !important;
+            z-index: 100 !important;
+        }
+
+        .light .tagcloud--item {
+            color: #fff;
+        }
+
+        .light .tagcloud--item:hover {
+           
+            border: 1px solid #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+<table id="myTable" style="width:50%">
+<tr>
+<td width="20%" style="vertical-align:top">
+<BR>
+<a href="https://bit.ly/CAPMV2" target="_blank"><img id="Logo" src="https://3.bp.blogspot.com/-XpRTZYHvMhs/WmNA0TEswkI/AAAAAAAACcI/PmOUWd7FXBolQfhrEupt4SLSyR6atRhtwCK4BGAYYCw/s1600/CA%2B-%2BFinal.png" style="border-radius: 5%;-webkit-filter: blur(15px);filter: blur(1.5px);display:visible;" ></img></a>
+<HR>
+<a href="https://linktr.ee/kganeshkumaran" target="_blank" style="color:white;"><Font color="white">YouTube Search </font></a>
+<HR>
+<BR>
+<!--
+    <ul>
+        <li><a href="#" onclick="toDefault()">Default Style</a></li>
+        <li><a href="#" onclick="toLight()">Light Style</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#" onclick="toCreate()">New TagCloud</a></li>
+        <li><a href="#" onclick="toDestroy()">Destroy TagCloud</a></li>
+    </ul>
+-->
+<!-- partial:index.partial.html -->
+<div class="dropholder">
+  <p>Select</p>
+  <div class="dropdown">
+    <p><i class="fa fa-foursquare"></i> CorporateAthletesPro</p>
+  </div>
+  <ul class="menu">
+    <li><a href="#" onclick="toCreateProfessional()" style="color: white;"><i class="fa fa-star"></i> Professional Prime</a></li>
+    <li><a href="#" onclick="toCreateSpiritual()" style="color: white;"><i class="fa fa-heart"></i> Spiritual Prime</a></li>
+    <li><a href="#" onclick="toCreateNutrition()" style="color: white;"><i class="fa fa-bolt"></i> Nutrition Prime</a></li>
+    <li><a href="#" onclick="toCreateHealers()" style="color: white;"><i class="fa fa-star"></i> Healers Prime</li>
+    <li><a href="#" onclick="toCreateManagement()" style="color: white;"><i class="fa fa-heart"></i> Management Prime</li>
+    <li><a href="#" onclick="toCreateParenting()" style="color: white;"><i class="fa fa-bolt"></i> Parenting Prime</li>
+    <li><a href="#" onclick="toCreateRelationship()" style="color: white;"><i class="fa fa-star"></i> Relationship Prime</li>
+    <li><a href="#" onclick="toCreateSleep()" style="color: white;"><i class="fa fa-bolt"></i> Sleep Prime</li>
+    <li><a href="#" onclick="toCreateModalities()" style="color: white;"><i class="fa fa-heart"></i> Modalities Prime</li>
+    <li><a href="#" onclick="toCreateAyurvedic()" style="color: white;"><i class="fa fa-star"></i> Ayurvedic Prime</li>
+  </ul>
+</div>
+<!-- partial -->
+
+
+</td>
+<td width="30%">
+    <div class="content">
+        <!-- content -->
+    </div>
+
+
+<script>
+/*!
+ * TagCloud.js v2.2.0
+ * Copyright (c) 2016-2021 @ Cong Min
+ * MIT License - https://github.com/mcc108/TagCloud
+ */
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self).TagCloud=t()}(this,function(){"use strict";function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}function a(){return(a=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n,i=arguments[t];for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n])}return e}).apply(this,arguments)}function t(t,e){var n,i=Object.keys(t);return Object.getOwnPropertySymbols&&(n=Object.getOwnPropertySymbols(t),e&&(n=n.filter(function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable})),i.push.apply(i,n)),i}function r(i){for(var e=1;e<arguments.length;e++){var o=null!=arguments[e]?arguments[e]:{};e%2?t(Object(o),!0).forEach(function(e){var t,n;t=i,e=o[n=e],n in t?Object.defineProperty(t,n,{value:e,enumerable:!0,configurable:!0,writable:!0}):t[n]=e}):Object.getOwnPropertyDescriptors?Object.defineProperties(i,Object.getOwnPropertyDescriptors(o)):t(Object(o)).forEach(function(e){Object.defineProperty(i,e,Object.getOwnPropertyDescriptor(o,e))})}return i}var o=function(){function o(){var e=0<arguments.length&&void 0!==arguments[0]?arguments[0]:document.body,t=1<arguments.length?arguments[1]:void 0,n=2<arguments.length?arguments[2]:void 0;!function(e){if(!(e instanceof o))throw new TypeError("Cannot call a class as a function")}(this);var i=this;if(!e||1!==e.nodeType)return new Error("Incorrect element type");i.$container=e,i.texts=t||[],i.config=r(r({},o._defaultConfig),n||{}),i.radius=i.config.radius,i.depth=2*i.radius,i.size=1.5*i.radius,i.maxSpeed=o._getMaxSpeed(i.config.maxSpeed),i.initSpeed=o._getInitSpeed(i.config.initSpeed),i.direction=i.config.direction,i.keep=i.config.keep,i.paused=!1,i._createElment(),i._init(),o.list.push({el:i.$el,container:e,instance:i})}var e,t,n;return e=o,n=[{key:"_on",value:function(e,t,n,i){e.addEventListener?e.addEventListener(t,n,i):e.attachEvent?e.attachEvent("on".concat(t),n):e["on".concat(t)]=n}}],(t=[{key:"_createElment",value:function(){var n=this,i=document.createElement("div");i.className=n.config.containerClass,n.config.useContainerInlineStyles&&(i.style.position="relative",i.style.width="".concat(2*n.radius,"px"),i.style.height="".concat(2*n.radius,"px")),n.items=[],n.texts.forEach(function(e,t){t=n._createTextItem(e,t);i.appendChild(t.el),n.items.push(t)}),n.$container.appendChild(i),n.$el=i}},{key:"_createTextItem",value:function(e){var t,n=1<arguments.length&&void 0!==arguments[1]?arguments[1]:0,i=this,o=document.createElement("span");return o.className=i.config.itemClass,i.config.useItemInlineStyles&&(o.style.willChange="transform, opacity, filter",o.style.position="absolute",o.style.top="50%",o.style.left="50%",o.style.zIndex=n+1,o.style.filter="alpha(opacity=0)",o.style.opacity=0,t="50% 50%",o.style.WebkitTransformOrigin=t,o.style.MozTransformOrigin=t,o.style.OTransformOrigin=t,o.style.transformOrigin=t,t="translate3d(-50%, -50%, 0) scale(1)",o.style.WebkitTransform=t,o.style.MozTransform=t,o.style.OTransform=t,o.style.transform=t),o.innerText=e,r({el:o},i._computePosition(n))}},{key:"_computePosition",value:function(e){var t=1<arguments.length&&void 0!==arguments[1]&&arguments[1],n=this.texts.length;t&&(e=Math.floor(Math.random()*(n+1)));e=Math.acos((2*e+1)/n-1),n=Math.sqrt((n+1)*Math.PI)*e;return{x:this.size*Math.cos(n)*Math.sin(e)/2,y:this.size*Math.sin(n)*Math.sin(e)/2,z:this.size*Math.cos(e)/2}}},{key:"_requestInterval",value:function(n,i){var o=window.requestAnimationFrame,a=(new Date).getTime(),r={};return r.value=o(function e(){r.value=o(e);var t=(new Date).getTime();i<=t-a&&(n.call(),a=(new Date).getTime())}),r}},{key:"_init",value:function(){var n=this;n.active=!1,n.mouseX0=n.initSpeed*Math.sin(n.direction*(Math.PI/180)),n.mouseY0=-n.initSpeed*Math.cos(n.direction*(Math.PI/180)),n.mouseX=n.mouseX0,n.mouseY=n.mouseY0,o._on(n.$el,"mouseover",function(){n.active=!0}),o._on(n.$el,"mouseout",function(){n.active=!1}),o._on(n.keep?window:n.$el,"mousemove",function(e){e=e||window.event;var t=n.$el.getBoundingClientRect();n.mouseX=(e.clientX-(t.left+t.width/2))/5,n.mouseY=(e.clientY-(t.top+t.height/2))/5}),n._next(),n.interval=n._requestInterval(function(){n._next.call(n)},10)}},{key:"_next",value:function(){var e,t,n,a,r=this;r.paused||(r.keep||r.active||(r.mouseX=Math.abs(r.mouseX-r.mouseX0)<1?r.mouseX0:(r.mouseX+r.mouseX0)/2,r.mouseY=Math.abs(r.mouseY-r.mouseY0)<1?r.mouseY0:(r.mouseY+r.mouseY0)/2),e=-(Math.min(Math.max(-r.mouseY,-r.size),r.size)/r.radius)*r.maxSpeed,t=Math.min(Math.max(-r.mouseX,-r.size),r.size)/r.radius*r.maxSpeed,Math.abs(e)<=.01&&Math.abs(t)<=.01||(n=Math.PI/180,a=[Math.sin(e*n),Math.cos(e*n),Math.sin(t*n),Math.cos(t*n)],r.items.forEach(function(e){var t=e.x,n=e.y*a[1]+e.z*-a[0],i=e.y*a[0]+e.z*a[1],o=t*a[3]+i*a[2],n=n,i=i*a[3]-t*a[2],t=2*r.depth/(2*r.depth+i);e.x=o,e.y=n,e.z=i,e.scale=t.toFixed(3);o=(1<(o=t*t-.25)?1:o).toFixed(3),n=e.el,i=(e.x-n.offsetWidth/2).toFixed(2),t=(e.y-n.offsetHeight/2).toFixed(2),e="translate3d(".concat(i,"px, ").concat(t,"px, 0) scale(").concat(e.scale,")");n.style.WebkitTransform=e,n.style.MozTransform=e,n.style.OTransform=e,n.style.transform=e,n.style.filter="alpha(opacity=".concat(100*o,")"),n.style.opacity=o})))}},{key:"update",value:function(e){var i=this;i.texts=e||[],i.texts.forEach(function(e,t){var n=i.items[t];n||(a(n=i._createTextItem(e,t),i._computePosition(t,!0)),i.$el.appendChild(n.el),i.items.push(n)),n.el.innerText=e});var t=i.texts.length,e=i.items.length;t<e&&i.items.splice(t,e-t).forEach(function(e){i.$el.removeChild(e.el)})}},{key:"destroy",value:function(){var t=this;t.interval=null;var e=o.list.findIndex(function(e){return e.el===t.$el});-1!==e&&o.list.splice(e,1),t.$container&&t.$el&&t.$container.removeChild(t.$el)}},{key:"pause",value:function(){this.paused=!0}},{key:"resume",value:function(){this.paused=!1}}])&&i(e.prototype,t),n&&i(e,n),o}();o.list=[],o._defaultConfig={radius:300,maxSpeed:"fast",initSpeed:"normal",direction:135,keep:!0,useContainerInlineStyles:!0,useItemInlineStyles:!0,containerClass:"tagcloud",itemClass:"tagcloud--item"},o._getMaxSpeed=function(e){return{slow:.5,normal:1,fast:2}[e]||1},o._getInitSpeed=function(e){return{slow:16,normal:32,fast:80}[e]||32};return function(e,t,n){"string"==typeof e&&(e=document.querySelectorAll(e)),e.forEach||(e=[e]);var i=[];return e.forEach(function(e){e&&i.push(new o(e,t,n))}),i.length<=1?i[0]:i}});
+
+</script>
+    <script>
+var textProfessional = ['Tony Robbins', 'Bob Proctor', 'Brendon Burchard','Tim Ferris', 'Marie Forleo', 'Mel Robbins','Jim Kwik', 'Robin Sharma', 'Marisa Peer','Jay Shetty', 'Lewis Howes','Evan Carmichael','Steven Kotler',
+'Gary Zukav','Lisa Nichols','Ajit Nawalkha','Nir Eyal','Emily Fetcher','Lee Holden','Srikumar Rao','Monty Moran','Jennifer Partridge','Regan Hillyer','Vishen Lakhiani','Paul Mckenna'];
+var textSpiritual=['Jiddu Krishnamurti','Srila Prabhu Pada','Ramana Maharshi','Sri Sri Ravi Shankar','Sadhguru','Radhanath Swami','Shivani BK','Gaur Gopal Das','Gauranga Das','Dandapani','Om Swami','Swami Mukundananda','Gelong Thubten','Paramahansa Yogananda','Swami Vivekananda','Osho','Dalai Lama'];
+var textNutrition=['Mark Hyman','Steve Gundry','Michael Greger','Mercola Joseph','Josh Axe','John Douillard','Rangan Chatterjee','Neal Barnard','Eric Berg','Dean Ornish','Colin Campbell','Caldwell Esselstyn','William Li','Joel Fuhrman','Annette Bosworth','Brooke Goldner','Vani Hari','dr_oz'];
+var textHealers=['Caroline Myss','Deepak Chopra','Bruce Lipton','Chris Wark','Anthony Williams','Gregg Braden','Joe Dispenza','Gabrielle Bernstein','Sonia Choquette','Anita Moorjani','John Holland','Peter Crone','Tommy Rosen','Niraj Naik','Louis Hay','Marianne Williamson','Daniel Goleman','Travis Brad','Tara Brach','Donna Eden','Jon Butcher','Jeffrey Allen','Jade Shaw'];
+var textManagement=['Marshall Goldsmith','Ken Blanchard','Franklin Covey', 'Jack Canfield','John Mattone','Seth Godin','John Maxwell','Brian Tracy','Darren Hardy','John Assaraf','Simon Sinek','Jim Rohn','Michael Hyatt'];
+var textParenting=['Doctor Shefali','Bryana Parenting','Mom s Belief','SimplyonPurpose','Siggie Cohen','Riddhi Deorah','Curious_neuron','Lizzie Assa','Ambica Agarwal','RaisingChildrenYouLike','Joyes_Parenting'];
+var textRelationship=['Matthew Hussey','Gottman Institute','Allyson','Samantha Mirarchi','Kate Kaplan','Elizabeth Earnshaw','Whitney Goodman','Maria Sosa','Susan David','Alexandra Solomon','Jordan Green','Marisa Peer','Katherine Wood'];
+var textSleep=['SleepYoga','Kristina Mcguire','Shelby Harris','Sleep Science','Weiss Sleep','AASM','James Wilson','Joshua Roland','Michael Breus','Courtney Bancroft','Lucy Wolfe'];
+var textModalities=['Yoga','NLP','Tai Chi','Speed Reading','Mental Toughness','Pranayama','Breathe Work','Meditation','Emotional Freedom Technique','Hypnosis','Flow Consciousness','Visualization','Emotional Tapping','Mindfulness','Access Consciousness','Integrative Breath','Wim Hof','James Nestor','Rekhi','Cognitive Behavior Therapy','Sleep Therapist','Positive Affirmations','Guided Meditation','Self Talk','Feng Shui','Kung Fu','Karate','Silva Method','QiGong','Lucid Dreaming','Auto Suggestion'];
+var textAyurvedic=['VasantLad','theayurvedicinstitute','Lissa Coffey','Sonica Krishan'];
+
+    </script>
+    <script>
+        // switch style
+        function toDefault() { document.body.classList.remove('light'); }
+        function toLight() { document.body.classList.add('light'); }
+        // add / remove tag
+        function addTag() {
+            if (!tc) return;
+            texts.push('New');
+            tc.update(texts);
+        }
+        function removeTag() {
+            if (!tc) return;
+            texts.pop();
+            tc.update(texts);
+        }
+        var otherTcs = [];
+        // create and destroy tagcloud
+function toCreateLogo()
+{
+
+
+}
+
+
+        function toCreateProfessional() {
+	
+	 if(otherTcs.length>0)	{
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+          }
+	 if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textProfessional));
+	  
+
+	        }
+
+	 function toCreateSpiritual() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textSpiritual));
+	        }
+
+	 function toCreateNutrition() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textNutrition));
+	        }
+
+	 function toCreateSpiritual() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textSpiritual));
+	        }
+
+	 function toCreateHealers() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textHealers));
+	        }
+
+	 function toCreateManagement() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textManagement));
+	        }
+
+function toCreateParenting() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textParenting));
+	        }
+
+function toCreateRelationship() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textRelationship));
+	        }
+
+function toCreateSleep() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textSleep));
+	        }
+
+function toCreateModalities() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textModalities));
+	        }
+
+function toCreateAyurvedic() {
+	 if(otherTcs.length>0){
+		var last = otherTcs[0];
+		 if (!last) return;
+		 last.destroy();
+            	otherTcs.pop();
+		}
+	  if (otherTcs.length >= 1) return;
+            otherTcs.push(TagCloud('.content', textAyurvedic));
+	        }
+
+        function toDestroy() {
+            var last = otherTcs[0];
+            if (!last) return;
+            last.destroy();
+            otherTcs.pop();
+        }
+        // pause and resume tagcloud animation
+        function pause() {
+            [].concat(tc, otherTcs).forEach(function (e) { return e.pause() });
+        }
+        function resume() {
+            [].concat(tc, otherTcs).forEach(function (e) { return e.resume() });
+        }
+        // add and remove clickEvent
+        function clickEventHandler(e) {
+	    if (e.target.className === 'tagcloud--item') {
+                  document.getElementById("gsc-i-id1").value = e.target.innerText;
+            }
+        }
+        function addClickEvent() {
+            var rootEl = document.querySelector('.content');
+            rootEl.addEventListener('click', clickEventHandler);
+        }
+        function removeClickEvent() {
+            var rootEl = document.querySelector('.content');
+            rootEl.removeEventListener('click', clickEventHandler);
+        }
+   var rootEl = document.querySelector('.content');
+            rootEl.addEventListener('click', clickEventHandler);
+
+        
+   </script>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="left">
+
+<script async src="https://cse.google.com/cse.js?cx=d85948e0b39e58aba"></script>
+<div class="gcse-search"></div>
+</td>
+</tr>
+</table>
+</body>
+
+</html>
